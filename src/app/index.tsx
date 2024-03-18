@@ -2,6 +2,8 @@ import * as Styled from '../styles/home/styles'
 import { Logo } from '../components/logo'
 import { Text, TextInput, TouchableOpacity, View } from 'react-native'
 import {Feather} from '@expo/vector-icons'
+import {Input} from '../components/Input'
+import { Button } from '../components/button'
 
 export default function Home() {
     return (
@@ -10,26 +12,36 @@ export default function Home() {
             <Styled.FormContainer>
                 <View>
                     <Styled.TextForm>Entre com a sua conta</Styled.TextForm>
-                    <Styled.EmailInput>
-                        <Feather name='mail' size={20} />
-                        <Styled.FormInput placeholder="E-mail" />
-                    </Styled.EmailInput>
-                    <Styled.EmailInput>
-                        <Feather name='lock' size={20} />
-                        <Styled.FormInput placeholder='Senha' />
-                    </Styled.EmailInput>
+
+                    <Input.Root>
+                        <Input.Icon>
+                            <Feather name='mail' size={20} />
+                        </Input.Icon>
+                        <Input.Control placeholderText='E-mail' />
+                    </Input.Root>
+
+                    <Input.Root>
+                        <Input.Icon>
+                            <Feather name='lock' size={20} />
+                        </Input.Icon>
+                        <Input.Control placeholderText='Senha' />
+                    </Input.Root>
+
+
                     <Styled.ForgotPasswordButton activeOpacity={0.7}>
                         <Styled.ForgotPasswordText>Esqueceu sua senha?</Styled.ForgotPasswordText>
                     </Styled.ForgotPasswordButton>
                 </View>
 
                 <View>
-                <Styled.FormButton isSignIn activeOpacity={.7}>
-                    <Styled.SignInText>Entrar</Styled.SignInText>
-                </Styled.FormButton>
-                <Styled.FormButton activeOpacity={.7}>
-                    <Styled.SignUpText>Criar Conta</Styled.SignUpText>
-                </Styled.FormButton>
+                <Button.Root>
+                    <Button.Content text='Entrar' />
+                </Button.Root>
+
+                <Button.Root variant>
+                    <Button.Content variant text='Criar Conta' />
+                </Button.Root>
+                
                 </View>
             </Styled.FormContainer>
 
