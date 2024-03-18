@@ -32,28 +32,3 @@ export const ForgotPasswordText = styled.Text`
     text-decoration: underline dotted;
     font-weight: 800;
 `
-
-interface LoginButtonProps {
-    isSignIn?: boolean
-}
-
-export const FormButton = styled.TouchableOpacity<LoginButtonProps>`
-    align-self: center;
-    background-color: ${props => props.isSignIn ? props.theme.colors.green : props.theme.colors.white};
-    border: 2px solid ${props => !props.isSignIn && props.theme.colors.green};
-    width:  80%;
-    padding: 12px;
-    border-radius: 20px;
-    margin: 10px 0;
-
-`
-
-export const SignInText = styled.Text`
-    color: white;
-    text-align: center;
-`
-export const SignUpText = styled.Text`
-    color: ${props => props.theme.colors.green};
-    text-align: center;
-`
-

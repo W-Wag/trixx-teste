@@ -4,6 +4,7 @@ import { Text, TextInput, TouchableOpacity, View } from 'react-native'
 import {Feather} from '@expo/vector-icons'
 import {Input} from '../components/Input'
 import { Button } from '../components/button'
+import { Link } from 'expo-router'
 
 export default function Home() {
     return (
@@ -34,13 +35,13 @@ export default function Home() {
                 </View>
 
                 <View>
-                <Button.Root>
-                    <Button.Content text='Entrar' />
-                </Button.Root>
+                    <Button.Link location='/menu'>
+                            <Button.Content text='Entrar' />
+                    </Button.Link>
 
-                <Button.Root variant>
-                    <Button.Content variant text='Criar Conta' />
-                </Button.Root>
+                    <Button.Root variant>
+                        <Button.Content variant text='Criar Conta' />
+                    </Button.Root>
                 
                 </View>
             </Styled.FormContainer>
