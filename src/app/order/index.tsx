@@ -28,7 +28,7 @@ export default function Order() {
                 <Input.Control placeholderText="Nome do prato" />
             </Input.Root>
             <Input.Root>
-                <Input.Control placeholderText="Numero da Mesa" />
+                <Input.Control placeholderText="Numero da Mesa" type="number-pad" />
             </Input.Root>
             <Styled.TextAreaInput multiline numberOfLines={5}
             placeholder="Anotações do cliente" />
@@ -38,8 +38,8 @@ export default function Order() {
                 <Styled.OrderTimeText>Horário do pedido</Styled.OrderTimeText>
                     <Styled.OrderTimeContainer>
                         
-                    <Styled.OrderInput id="hours"  />
-                    <Styled.OrderInput id="minutes" />
+                    <Styled.OrderInput keyboardType="number-pad"  />
+                    <Styled.OrderInput keyboardType="number-pad" />
                     </Styled.OrderTimeContainer>
                 </Styled.OrderTimeInput>
 
@@ -48,7 +48,6 @@ export default function Order() {
                     <Styled.OrderTimeContainer>
                         
                     <Styled.DateInput 
-                    id="date"
                     type={'datetime'}
                     value={date}
                     onChangeText={handleDateChange}

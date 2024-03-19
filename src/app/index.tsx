@@ -17,14 +17,14 @@ export default function Home() {
                         <Input.Icon>
                             <Feather name='mail' size={20} />
                         </Input.Icon>
-                        <Input.Control placeholderText='E-mail' />
+                        <Input.Control type='email-address' placeholderText='E-mail' />
                     </Input.Root>
 
                     <Input.Root>
                         <Input.Icon>
                             <Feather name='lock' size={20} />
                         </Input.Icon>
-                        <Input.Control placeholderText='Senha' />
+                        <Input.Control type='visible-password' placeholderText='Senha' />
                     </Input.Root>
 
 
