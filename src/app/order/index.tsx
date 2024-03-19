@@ -38,8 +38,8 @@ export default function Order() {
                 <Styled.OrderTimeText>Horário do pedido</Styled.OrderTimeText>
                     <Styled.OrderTimeContainer>
                         
-                    <Styled.OrderInput keyboardType="number-pad"  />
-                    <Styled.OrderInput keyboardType="number-pad" />
+                    <Styled.OrderInput maxLength={2} keyboardType="number-pad"  />
+                    <Styled.OrderInput maxLength={2} keyboardType="number-pad" />
                     </Styled.OrderTimeContainer>
                 </Styled.OrderTimeInput>
 
