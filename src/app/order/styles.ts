@@ -23,13 +23,10 @@ export const TextAreaInput = styled.TextInput`
     background-color: white;
     display: flex;
     align-self: center;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
     width: 90%;
     gap: 8px;
     border-radius: 6px;
-    padding: 8px;
+    padding: 12px;
     margin-top: 12px;
     margin-bottom: 12px;
     border: 2px solid ${props => props.theme.colors.green};
