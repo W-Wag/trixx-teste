@@ -1,7 +1,6 @@
 import * as Styled from './styles'
 import { Logo } from '../../components/logo'
 import { Button } from '../../components/button'
-import { View } from 'react-native'
 
 export default function Home() {
     return (

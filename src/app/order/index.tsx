@@ -1,10 +1,9 @@
 import { Feather } from "@expo/vector-icons";
-import { ScrollView, Text, TextInput, View } from "react-native";
+import { ScrollView } from "react-native";
 import * as Styled from './styles'
 import { BackButton } from "../../components/back-button";
 import { Input } from "../../components/Input";
 import { Button } from "../../components/button";
-import { TextInputMask } from "react-native-masked-text";
 import { useState } from "react";
 
 export default function Order() {

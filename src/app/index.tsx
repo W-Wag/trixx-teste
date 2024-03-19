@@ -1,10 +1,9 @@
 import * as Styled from '../styles/home/styles'
 import { Logo } from '../components/logo'
-import { Text, TextInput, TouchableOpacity, View } from 'react-native'
+import { View } from 'react-native'
 import {Feather} from '@expo/vector-icons'
 import {Input} from '../components/Input'
 import { Button } from '../components/button'
-import { Link } from 'expo-router'
 
 export default function Home() {
     return (
